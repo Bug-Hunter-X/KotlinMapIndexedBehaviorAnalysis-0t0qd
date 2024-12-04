@@ -1,0 +1,3 @@
+This repository demonstrates an uncommon bug in Kotlin's `mapIndexed` function.  The issue arises when the lambda expression inside `mapIndexed` modifies the original list being iterated. This can lead to unexpected results, as the index and the element value might become desynchronized.
+
+The `BuggyMapIndexed.kt` file contains code exhibiting this problem. The solution, shown in `FixedMapIndexed.kt`, addresses the issue by creating a copy of the list before modification to avoid unexpected behavior.
